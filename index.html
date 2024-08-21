@@ -8,12 +8,21 @@
 </head>
 <body>
     <div class="weather-dashboard">
-        <h1>Weather Dashboard</h1>
-        <input type="text" id="cityInput" placeholder="Enter city name">
-        <button id="getWeatherBtn">Get Weather</button>
+        <div class="toggle-mode">
+            <button id="lightModeBtn">Light Mode</button>
+            <button id="darkModeBtn">Dark Mode</button>
+        </div>
 
-        <div id="weatherInfo" class="weather-info">
-            <!-- Weather details will be displayed here -->
+        <div id="weatherDisplay" class="weather-display">
+            <div class="weather-icon" id="weatherIcon"></div>
+            <div class="temperature" id="temperature">--°</div>
+            <div class="city" id="city">---</div>
+        </div>
+
+        <div class="details">
+            <div class="humidity">Humidity: <span id="humidity">--%</span></div>
+            <div class="wind-speed">Wind: <span id="windSpeed">--KM/H</span></div>
+            <div class="chance-of-rain">Rain: <span id="chanceOfRain">--%</span></div>
         </div>
     </div>
 
